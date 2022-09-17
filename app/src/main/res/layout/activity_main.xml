@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/ListViewID"
+        android:layout_width="382dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="100dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/holo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add City"
+        app:layout_constraintBottom_toTopOf="@+id/ListViewID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/city_editText"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Enter city name"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="153dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="Confirm"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/delBtn"
+        android:layout_width="162dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="DELETE CITY"
+        app:layout_constraintBottom_toTopOf="@+id/ListViewID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toEndOf="@+id/addBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
